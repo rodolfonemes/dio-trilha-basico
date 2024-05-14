@@ -1,48 +1,49 @@
-public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
-
+public class iPhone implements ReprodutorDeMusica, AparelhoTelefonico, NavegadorInternet {
 
     @Override
-    public void ligar(String numero) {
-        //Implementação aqui
+    public void fazerLigacao(String numero) {
+        System.out.println("LIGANDO......");
     }
 
     @Override
-    public void atender(String numero) {
-        //Implementação aqui
+    public void atenderLigacao(String numero) {
+        System.out.println("ALO");
     }
 
     @Override
-    public void iniciarCorreioVoz(String mensagem, String destinatario) {
-        //Implementação aqui
+    public void correioVoz(String mensagem, String destinatario) {
+        System.out.println("DIGITANDO A MSG");
+        System.out.println("SELECIONANDO O DESTINATARIO");
+        System.out.println("ENVIANDO A MSG");
     }
 
     @Override
-    public void exibirPagina(String url) {
-        //Implementação aqui
+    public void abrirPagina(String url) {
+        System.out.println("ABRINDO PAGINA INICIAL");
     }
 
     @Override
-    public void adicionarNovaAba(String url) {
-        //Implementação aqui
+    public void novaAba(String url) {
+        System.out.println("ABRINDO NOVA ABA");
     }
 
     @Override
     public void atualizarPagina() {
-        //Implementação aqui
+        System.out.println("ATUALIZANDO PAGINA");
     }
 
     @Override
-    public void tocar() {
-        //Implementação aqui
+    public void tocarMusica() {
+        System.out.println("DANDO PLAY NA MUSICA");
     }
 
     @Override
-    public void pausar() {
-        //Implementação aqui
+    public void pausarMusica() {
+        System.out.println("PAUSANDO A MUSICA");
     }
 
     @Override
     public void selecionarMusica() {
-        //Implementação aqui
+        System.out.println("SELECIONANDO A MUISCA PREFERIDA");
     }
 }
